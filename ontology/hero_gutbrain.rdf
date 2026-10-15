@@ -1,0 +1,1866 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/hereditary/ontology/gutbrain/schema/conceptSchema/"
+     xml:base="https://w3id.org/hereditary/ontology/gutbrain/schema/conceptSchema/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:gutbrain="https://w3id.org/hereditary/ontology/gutbrain/schema#">
+    <owl:Ontology rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema">
+        <owl:versionIRI rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/1.0/"/>
+        <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+        <terms:creator rdf:resource="https://orcid.org/0000-0003-4970-4554"/>
+        <terms:creator rdf:resource="https://orcid.org/0009-0001-1596-8642"/>
+        <terms:creator rdf:resource="https://orcid.org/0009-0006-5558-4295"/>
+        <terms:description xml:lang="en">The Hereditary ontology models phenoclinical, genomics and scientific aspects of the gut-brain axis to provide a unifying layer to query different database sources through an Ontology-Based Data Access (OBDA) framework. This part of the ontology focuses on gut-brain data.</terms:description>
+        <terms:license xml:lang="en">Copyright 2024-2027 University of Padua, Italy
+
+Licensed under the
+
+Creative Commons Attribution 4.0 International License
+     https://creativecommons.org/licenses/by/4.0/
+
+You may obtain a copy of the License at
+     https://creativecommons.org/licenses/by/4.0/legalcode
+
+This work has been supported by the HEREDITARY project
+     https://hereditary-project.eu/
+
+     funded by the European Union’s Horizon Europe research and innovation programme 
+     under the grant agreement No GA101137074</terms:license>
+        <terms:title xml:lang="en">The Hereditary Ontology for GutBrain Data</terms:title>
+        <rdfs:label>Author: Samuel Piron</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor">
+        <terms:description xml:lang="en">The guidelines for using names of persons or organizations as creators also apply to contributors.  Typically, the name of a Contributor should be used to indicate the entity.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <rdfs:comment xml:lang="en">An entity responsible for making contributions to the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="en">Contributor</rdfs:label>
+        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/contributor) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/coverage -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/coverage">
+        <terms:description xml:lang="en">Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names [[TGN](https://www.getty.edu/research/tools/vocabulary/tgn/index.html)]. Where appropriate, named places or time periods may be used in preference to numeric identifiers such as sets of coordinates or date ranges.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <rdfs:comment xml:lang="en">The spatial or temporal topic of the resource, spatial applicability of the resource, or jurisdiction under which the resource is relevant.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="en">Coverage</rdfs:label>
+        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/coverage) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator">
+        <terms:description xml:lang="en">Examples of a Creator include a person, an organization, or a service. Typically, the name of a Creator should be used to indicate the entity.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <rdfs:comment xml:lang="en">An entity primarily responsible for making the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="en">Creator</rdfs:label>
+        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/creator) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date">
+        <terms:description xml:lang="en">Date may be used to express temporal information at any level of granularity.  Recommended practice is to express the date, date/time, or period of time according to ISO 8601-1 [[ISO 8601-1](https://www.iso.org/iso-8601-date-and-time-format.html)] or a published profile of the ISO standard, such as the W3C Note on Date and Time Formats [[W3CDTF](https://www.w3.org/TR/NOTE-datetime)] or the Extended Date/Time Format Specification [[EDTF](http://www.loc.gov/standards/datetime/)].  If the full date is unknown, month and year (YYYY-MM) or just year (YYYY) may be used. Date ranges may be specified using ISO 8601 period of time specification in which start and end dates are separated by a &apos;/&apos; (slash) character.  Either the start or end date may be missing.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <rdfs:comment xml:lang="en">A point or period of time associated with an event in the lifecycle of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="en">Date</rdfs:label>
+        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/date) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description">
+        <terms:description xml:lang="en">Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <rdfs:comment xml:lang="en">An account of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="en">Description</rdfs:label>
+        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/description) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/format -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/format">
+        <terms:description xml:lang="en">Recommended practice is to use a controlled vocabulary where available. For example, for file formats one could use the list of Internet Media Types [[MIME](https://www.iana.org/assignments/media-types/media-types.xhtml)].</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <rdfs:comment xml:lang="en">The file format, physical medium, or dimensions of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="en">Format</rdfs:label>
+        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/format) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier">
+        <terms:description xml:lang="en">Recommended practice is to identify the resource by means of a string conforming to an identification system.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <rdfs:comment xml:lang="en">An unambiguous reference to the resource within a given context.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="en">Identifier</rdfs:label>
+        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/identifier) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/language -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/language">
+        <terms:description xml:lang="en">Recommended practice is to use either a non-literal value representing a language from a controlled vocabulary such as ISO 639-2 or ISO 639-3, or a literal value consisting of an IETF Best Current Practice 47 [[IETF-BCP47](https://tools.ietf.org/html/bcp47)] language tag.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <rdfs:comment xml:lang="en">A language of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="en">Language</rdfs:label>
+        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/language) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher">
+        <terms:description xml:lang="en">Examples of a Publisher include a person, an organization, or a service. Typically, the name of a Publisher should be used to indicate the entity.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <rdfs:comment xml:lang="en">An entity responsible for making the resource available.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="en">Publisher</rdfs:label>
+        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/publisher) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/relation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/relation">
+        <terms:description xml:lang="en">Recommended practice is to identify the related resource by means of a URI. If this is not possible or feasible, a string conforming to a formal identification system may be provided.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <rdfs:comment xml:lang="en">A related resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="en">Relation</rdfs:label>
+        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/relation) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights">
+        <terms:description xml:lang="en">Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <rdfs:comment xml:lang="en">Information about rights held in and over the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="en">Rights</rdfs:label>
+        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/rights) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source">
+        <terms:description xml:lang="en">The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <rdfs:comment xml:lang="en">A related resource from which the described resource is derived.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="en">Source</rdfs:label>
+        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/subject -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/subject">
+        <terms:description xml:lang="en">Typically, the subject will be represented using keywords, key phrases, or classification codes.  Recommended best practice is to use a controlled vocabulary.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <rdfs:comment xml:lang="en">The topic of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="en">Subject</rdfs:label>
+        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/subject) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title">
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <rdfs:comment xml:lang="en">A name given to the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="en">Title</rdfs:label>
+        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/title) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/type -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type">
+        <terms:description xml:lang="en">Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [[DCMI-TYPE](http://dublincore.org/documents/dcmi-type-vocabulary/)]. To describe the file format, physical medium, or dimensions of the resource, use the Format element.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">1999-07-02</terms:issued>
+        <rdfs:comment xml:lang="en">The nature or genre of the resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label xml:lang="en">Type</rdfs:label>
+        <skos:note xml:lang="en">A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/type) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation.</skos:note>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/description"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/accessRights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/accessRights">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/rights"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/rights"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/accrualMethod -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/accrualMethod">
+        <rdfs:domain rdf:resource="http://purl.org/dc/dcmitype/Collection"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/accrualPeriodicity -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/accrualPeriodicity">
+        <rdfs:domain rdf:resource="http://purl.org/dc/dcmitype/Collection"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/accrualPolicy -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/accrualPolicy">
+        <rdfs:domain rdf:resource="http://purl.org/dc/dcmitype/Collection"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/alternative -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/alternative">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/title"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/audience -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/audience"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/available -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/available">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/identifier"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/conformsTo -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/conformsTo">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <rdf:Description rdf:about="http://purl.org/dc/terms/contributor">
+        <terms:description xml:lang="en">The guidelines for using names of persons or organizations as creators apply to contributors.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+        <rdfs:comment xml:lang="en">An entity responsible for making contributions to the resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Contributor</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/contributor"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/dc/terms/coverage -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/coverage">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/coverage"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+        <terms:description xml:lang="en">Recommended practice is to identify the creator with a URI.  If this is not possible or feasible, a literal value that identifies the creator may be provided.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+        <rdfs:comment xml:lang="en">An entity responsible for making the resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Creator</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/creator"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/contributor"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/dc/terms/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/dateAccepted -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/dateAccepted">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/dateCopyrighted -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/dateCopyrighted">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/dateSubmitted -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/dateSubmitted">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <rdf:Description rdf:about="http://purl.org/dc/terms/description">
+        <terms:description xml:lang="en">Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.</terms:description>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-01-14</terms:issued>
+        <rdfs:comment xml:lang="en">An account of the resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Description</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/description"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/dc/terms/educationLevel -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/educationLevel">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/audience"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/extent -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/extent">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/format"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/format"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/format -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/format">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/format"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasFormat -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasFormat">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasPart -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasPart">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasVersion -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasVersion">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/identifier"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isFormatOf -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isFormatOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isPartOf -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isPartOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isReferencedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isReferencedBy">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isReplacedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isReplacedBy">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isRequiredBy -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isRequiredBy">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isVersionOf -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isVersionOf">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/language -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/language">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/language"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/rights"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/rights"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/mediator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/mediator">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/audience"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/medium -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/medium">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/format"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/format"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/publisher"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/references -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/references">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/relation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/relation">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/replaces -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/replaces">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/requires -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/requires">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/relation"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/rights"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/source"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/relation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/spatial -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/spatial">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/coverage"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/coverage"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/subject -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/subject">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/subject"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/tableOfContents -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/tableOfContents">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/description"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/description"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/temporal -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/temporal">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/coverage"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/coverage"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <rdf:Description rdf:about="http://purl.org/dc/terms/title">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/title"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/dc/terms/type -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/type">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/type"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/valid -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/valid">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#exactMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/Box -->
+
+    <rdfs:Datatype rdf:about="http://purl.org/dc/terms/Box"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/ISO3166 -->
+
+    <rdfs:Datatype rdf:about="http://purl.org/dc/terms/ISO3166"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/ISO639-2 -->
+
+    <rdfs:Datatype rdf:about="http://purl.org/dc/terms/ISO639-2"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/ISO639-3 -->
+
+    <rdfs:Datatype rdf:about="http://purl.org/dc/terms/ISO639-3"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/Period -->
+
+    <rdfs:Datatype rdf:about="http://purl.org/dc/terms/Period"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/Point -->
+
+    <rdfs:Datatype rdf:about="http://purl.org/dc/terms/Point"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/RFC1766 -->
+
+    <rdfs:Datatype rdf:about="http://purl.org/dc/terms/RFC1766"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/RFC3066 -->
+
+    <rdfs:Datatype rdf:about="http://purl.org/dc/terms/RFC3066"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/RFC4646 -->
+
+    <rdfs:Datatype rdf:about="http://purl.org/dc/terms/RFC4646"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/RFC5646 -->
+
+    <rdfs:Datatype rdf:about="http://purl.org/dc/terms/RFC5646"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/URI -->
+
+    <rdfs:Datatype rdf:about="http://purl.org/dc/terms/URI"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/W3CDTF -->
+
+    <rdfs:Datatype rdf:about="http://purl.org/dc/terms/W3CDTF"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gYear -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYear"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broaderTransitive -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#broaderTransitive"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/administered -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/administered">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/brainteaser/ontology/schema/InterventionOrProcedure"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/DietarySupplement"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/Organism"/>
+        <rdfs:comment xml:lang="en">It defines the relationship between the intervention or procedure and the organism.</rdfs:comment>
+        <rdfs:label xml:lang="en">administered</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/affect -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/affect">
+        <rdfs:domain rdf:resource="https://w3id.org/brainteaser/ontology/schema/DiseaseDisorderOrFinding"/>
+        <rdfs:range rdf:resource="https://w3id.org/brainteaser/ontology/schema/DiseaseDisorderOrFinding"/>
+        <rdfs:comment xml:lang="en">It defines a relatioship between a disease and another disease.</rdfs:comment>
+        <rdfs:label>affect</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/changeAbundance -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/changeAbundance">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/brainteaser/ontology/schema/DiseaseDisorderOrFinding"/>
+                    <rdf:Description rdf:about="https://w3id.org/brainteaser/ontology/schema/InterventionOrProcedure"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/genomics/schema/Species"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Microbiome"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">It defines the relationship between the bacteria or microbiome and te disease, disorder or finding.</rdfs:comment>
+        <rdfs:label xml:lang="en">changeAbundance</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/changeEffect -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/changeEffect">
+        <rdfs:domain rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/Drug"/>
+        <rdfs:range rdf:resource="https://w3id.org/brainteaser/ontology/schema/DiseaseDisorderOrFinding"/>
+        <rdfs:comment xml:lang="en">It indicates that a drug or substance alters or modifies the course or symptoms of a disease or disorder.</rdfs:comment>
+        <rdfs:label xml:lang="en">changeEffect</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/changeExpression -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/changeExpression">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/brainteaser/ontology/schema/InterventionOrProcedure"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/genomics/schema/Species"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/DietarySupplement"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Microbiome"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/brainteaser/ontology/schema/Gene"/>
+        <rdfs:comment xml:lang="en">It explains how a bacteria or the microbiome can change the expression of a gene.</rdfs:comment>
+        <rdfs:label xml:lang="en">changeExpression</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/comparedTo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/comparedTo">
+        <rdfs:domain rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/Microbiome"/>
+        <rdfs:range rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/Microbiome"/>
+        <rdfs:comment xml:lang="en">It defines the relationship between an instance of microbiome and another microbiome.</rdfs:comment>
+        <rdfs:label xml:lang="en">comparedTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/composedOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/composedOf">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/PaperAbstract"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/PaperTitle"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/Sentence"/>
+        <rdfs:comment xml:lang="en">This relationship describes the connection between the abstracts and titles and the sentences that compose them.</rdfs:comment>
+        <rdfs:label xml:lang="en">composedOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/containedIn -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/containedIn">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/brainteaser/ontology/schema/AnatomicalSite"/>
+                    <rdf:Description rdf:about="https://w3id.org/brainteaser/ontology/schema/DiseaseDisorderOrFinding"/>
+                    <rdf:Description rdf:about="https://w3id.org/brainteaser/ontology/schema/Gene"/>
+                    <rdf:Description rdf:about="https://w3id.org/brainteaser/ontology/schema/InterventionOrProcedure"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/genomics/schema/Assay"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/genomics/schema/Species"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Animal"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/BiomedicalTechnique"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/DietarySupplement"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Drug"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Food"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Human"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Microbiome"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Organism"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/StatisticalTechnique"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:comment xml:lang="en">It describes the relationship between the mention and the sentence and the entities and the mention.</rdfs:comment>
+        <rdfs:label xml:lang="en">containedIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/contains -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/contains">
+        <rdfs:domain rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <rdfs:range rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/Paper"/>
+        <rdfs:comment xml:lang="en">It explains that each collection is composed of papers.</rdfs:comment>
+        <rdfs:label xml:lang="en">contains</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/hasAbstract -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/hasAbstract">
+        <rdfs:domain rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/Paper"/>
+        <rdfs:range rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/PaperAbstract"/>
+        <rdfs:comment xml:lang="en">It underlines that a paper contains an abstract.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasAbstract</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/hasTitle -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/hasTitle">
+        <rdfs:domain rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/Paper"/>
+        <rdfs:range rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/PaperTitle"/>
+        <rdfs:comment xml:lang="en">It underlines that a paper contains a title.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasTitle</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/impact -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/impact">
+        <rdfs:domain rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/Drug"/>
+        <rdfs:range rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/Microbiome"/>
+        <rdfs:comment xml:lang="en">It describes the effect or change when is strongly associated with alterations in biological or microbiological aspects, like microbiota or gut health.</rdfs:comment>
+        <rdfs:label xml:lang="en">impact</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/influence -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/influence">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/brainteaser/ontology/schema/InterventionOrProcedure"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/genomics/schema/Species"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/brainteaser/ontology/schema/DiseaseDisorderOrFinding"/>
+        <rdfs:comment xml:lang="en">Represents the effect or impact of a dietary supplements or other substances and often diseases, disorders, or health conditions.</rdfs:comment>
+        <rdfs:label xml:lang="en">influence</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/interact -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/interact">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/brainteaser/ontology/schema/DiseaseDisorderOrFinding"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/genomics/schema/Species"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Chemical"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Drug"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/brainteaser/ontology/schema/InterventionOrProcedure"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/genomics/schema/Species"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Chemical"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Drug"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">It explains what can influence disease, disorder or finding.</rdfs:comment>
+        <rdfs:label xml:lang="en">interact</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/isA -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/isA">
+        <rdfs:domain rdf:resource="https://w3id.org/brainteaser/ontology/schema/DiseaseDisorderOrFinding"/>
+        <rdfs:range rdf:resource="https://w3id.org/brainteaser/ontology/schema/DiseaseDisorderOrFinding"/>
+        <rdfs:comment xml:lang="en">It defines a relatioship between a disease and another disease.</rdfs:comment>
+        <rdfs:label xml:lang="en">isA</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/isLinkedTo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/isLinkedTo">
+        <rdfs:domain rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/Microbiome"/>
+        <rdfs:range rdf:resource="https://w3id.org/brainteaser/ontology/schema/DiseaseDisorderOrFinding"/>
+        <rdfs:comment xml:lang="en">It defines a relatioship between microbiota and a disease or health condition.</rdfs:comment>
+        <rdfs:label xml:lang="en">isLinkedTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/locatedIn -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/locatedIn">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/brainteaser/ontology/schema/AnatomicalSite"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Chemical"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Mention"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Microbiome"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/brainteaser/ontology/schema/AnatomicalSite"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Organism"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Sentence"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">It defines the relationship between an organism and its location in the Microbiome.</rdfs:comment>
+        <rdfs:label xml:lang="en">locatedIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/partOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/partOf">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/brainteaser/ontology/schema/Gene"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/genomics/schema/Species"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Genome"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Metabolite"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Microbiome"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Sentence"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Chemical"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Genome"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Microbiome"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Microbiota"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/PaperAbstract"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/PaperTitle"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:comment xml:lang="en">It defines the relationship between bacterias that are part of microbiota and microbiome.</rdfs:comment>
+        <rdfs:label xml:lang="en">partOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/producedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/producedBy">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Drug"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Metabolite"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/Microbiome"/>
+        <rdfs:comment xml:lang="en">It defines the relationship between the drug or metabolite and the microbiome.</rdfs:comment>
+        <rdfs:label xml:lang="en">producedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/relatedTo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/relatedTo">
+        <rdfs:domain rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/Neurotransmitter"/>
+        <rdfs:range rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/Microbiome"/>
+        <rdfs:comment xml:lang="en">It defines the relationship between the neurotransmitter and the microbiome.</rdfs:comment>
+        <rdfs:label xml:lang="en">relatedTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/strike -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/strike">
+        <rdfs:domain rdf:resource="https://w3id.org/brainteaser/ontology/schema/DiseaseDisorderOrFinding"/>
+        <rdfs:range rdf:resource="https://w3id.org/brainteaser/ontology/schema/AnatomicalSite"/>
+        <rdfs:comment xml:lang="en">It defines the relationship between the disease, disorder and finding and the anatomical location.</rdfs:comment>
+        <rdfs:label xml:lang="en">strike</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/target -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/target">
+        <rdfs:domain rdf:resource="https://w3id.org/brainteaser/ontology/schema/DiseaseDisorderOrFinding"/>
+        <rdfs:range rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/Organism"/>
+        <rdfs:comment xml:lang="en">It is used to specify that a particular disease or health disorder primarily affects or concerns a specific population or biological entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">target</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/treatedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/treatedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/brainteaser/ontology/schema/DiseaseDisorderOrFinding"/>
+        <rdfs:range rdf:resource="https://w3id.org/brainteaser/ontology/schema/InterventionOrProcedure"/>
+        <rdfs:comment xml:lang="en">It explains that the disease, disorder or finding is treated by the intervention or procedure.</rdfs:comment>
+        <rdfs:label xml:lang="en">treatedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/usedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/usedBy">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Animal"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Human"/>
+                    <rdf:Description rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Microbiome"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/BiomedicalTechnique"/>
+        <rdfs:comment xml:lang="en">This relationship suggests the employment or use of specific biomedical techniques or methods on particular biological entities, usually in experimental setups.</rdfs:comment>
+        <rdfs:label xml:lang="en">usedBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/alternative -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/alternative">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/title"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/available -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/available">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/created">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/date -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/date"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/dateAccepted -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/dateAccepted">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/dateCopyrighted -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/dateCopyrighted">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/dateSubmitted -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/dateSubmitted">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/issued">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/modified">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/title">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/valid -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/valid">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/hasAbstractText -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/hasAbstractText">
+        <rdfs:domain rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/PaperAbstract"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+        <rdfs:comment xml:lang="en">The full abstract of the paper as a single text string.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasAbstractText</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/hasMentionText -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/hasMentionText">
+        <rdfs:domain rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/Mention"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+        <rdfs:comment xml:lang="en">The exact text span that was annotated (e.g., the words in the title/abstract that constitute an individual or relation mention).</rdfs:comment>
+        <rdfs:label xml:lang="en">hasMentionText</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/hasSentenceText -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/hasSentenceText">
+        <rdfs:domain rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/Sentence"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+        <rdfs:comment xml:lang="en">The complete sentence from the source document.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasSentenceText</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/hasTitleText -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/hasTitleText">
+        <rdfs:domain rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/PaperTitle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+        <rdfs:comment xml:lang="en">The paper’s title as a single text string.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasTitleText</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/paperAnnotator -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/paperAnnotator">
+        <rdfs:domain rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+        <rdfs:comment xml:lang="en">The identifier of the expert who annotated the paper (e.g., expert_7).</rdfs:comment>
+        <rdfs:label xml:lang="en">paperAnnotator</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/paperAuthor -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/paperAuthor">
+        <rdfs:domain rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+        <rdfs:comment xml:lang="en">The author list for the paper.</rdfs:comment>
+        <rdfs:label xml:lang="en">paperAuthor</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/paperId -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/paperId">
+        <rdfs:domain rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">The unique paper identifier in your corpus (e.g., PubMed ID).</rdfs:comment>
+        <rdfs:label xml:lang="en">paperId</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/paperJournal -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/paperJournal">
+        <rdfs:domain rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+        <rdfs:comment xml:lang="en">The journal where the paper was published.</rdfs:comment>
+        <rdfs:label xml:lang="en">paperJournal</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/paperYear -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/paperYear">
+        <rdfs:domain rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+        <rdfs:comment xml:lang="en">The publication year of the paper.</rdfs:comment>
+        <rdfs:label xml:lang="en">paperYear</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/taggedAs -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/taggedAs">
+        <rdfs:domain rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/Mention"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+        <rdfs:comment xml:lang="en">One or more human-readable tags assigned to a mention or paper (e.g., drug, bacteria, DDF), mirroring the category.</rdfs:comment>
+        <rdfs:label xml:lang="en">taggedAs</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Class -->
+
+    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    
+
+
+    <!-- https://w3id.org/brainteaser/ontology/schema/AnatomicalSite -->
+
+    <owl:Class rdf:about="https://w3id.org/brainteaser/ontology/schema/AnatomicalSite">
+        <rdfs:comment xml:lang="en">Named locations of or within the body. [Definition Source: NCIT]</rdfs:comment>
+        <rdfs:label xml:lang="en">Anatomic Site</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/NCIT_C13717</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/brainteaser/ontology/schema/DiseaseDisorderOrFinding -->
+
+    <owl:Class rdf:about="https://w3id.org/brainteaser/ontology/schema/DiseaseDisorderOrFinding">
+        <rdfs:comment xml:lang="en">A condition that is relevant to human neoplasms and non-neoplastic disorders. This includes observations, test results, history and other concepts relevant to the characterization of human pathologic conditions. [Definition Source: NCIT]</rdfs:comment>
+        <rdfs:label xml:lang="en">Disease, Disorder or Finding</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/NCIT_C7057</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/brainteaser/ontology/schema/Gene -->
+
+    <owl:Class rdf:about="https://w3id.org/brainteaser/ontology/schema/Gene">
+        <rdfs:comment xml:lang="en">A functional unit of heredity which occupies a specific position on a particular chromosome and serves as the template for a product that contributes to a phenotype or a biological function. [Definition Source: NCIT]</rdfs:comment>
+        <rdfs:label xml:lang="en">Gene</rdfs:label>
+        <skos:exactMatch>http://purl.bioontology.org/ontology/SNOMEDCT/67271001</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/brainteaser/ontology/schema/InterventionOrProcedure -->
+
+    <owl:Class rdf:about="https://w3id.org/brainteaser/ontology/schema/InterventionOrProcedure">
+        <rdfs:comment xml:lang="en">An activity that produces an effect, or that is intended to alter the course of a disease in a patient or population. This is a general term that encompasses the medical, social, behavioral, and environmental acts that can have preventive, therapeutic, or palliative effects. [Definition Source: NCIT]</rdfs:comment>
+        <rdfs:label xml:lang="en">Intervention or Procedure</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/NCIT_C25218</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/genomics/schema/Assay -->
+
+    <owl:Class rdf:about="https://w3id.org/hereditary/ontology/genomics/schema/Assay">
+        <rdfs:comment xml:lang="en">The assay used to produce measurement. [Definition Source: Phenopacket v2]</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.obolibrary.org/obo/OBI_0000070</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/genomics/schema/Species -->
+
+    <owl:Class rdf:about="https://w3id.org/hereditary/ontology/genomics/schema/Species">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/Genus"/>
+        <rdfs:comment xml:lang="en">A group of organisms that differ from all other groups of organisms and that are capable of breeding and producing fertile offspring. [Definition Source: NCIT]</rdfs:comment>
+        <rdfs:label xml:lang="en">Species</rdfs:label>
+        <skos:exactMatch>http://edamontology.org/data_1045</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/Animal -->
+
+    <owl:Class rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Animal">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/Organism"/>
+        <rdfs:comment xml:lang="en">A non-human living organism that has membranous cell walls, requires oxygen and organic foods, and is capable of voluntary movement, as distinguished from a plant or mineral. [Definition Source: NCIT]</rdfs:comment>
+        <rdfs:label xml:lang="en">Animal</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/NCIT_C14182</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/BiomedicalTechnique -->
+
+    <owl:Class rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/BiomedicalTechnique">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hereditary/ontology/genomics/schema/Assay"/>
+        <rdfs:comment xml:lang="en">Research concerned with the application of biological and physiological principles to clinical medicine. [Definition Source: NCIT]</rdfs:comment>
+        <rdfs:label xml:lang="en">Biomedical Technique</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/NCIT_C15188</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/Chemical -->
+
+    <owl:Class rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Chemical">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/brainteaser/ontology/schema/InterventionOrProcedure"/>
+        <rdfs:comment xml:lang="en">A chemical substance is a portion of matter of constant composition, composed of molecular entities of the same type or of different types. [Definition Source: CHEBI]</rdfs:comment>
+        <rdfs:label xml:lang="en">Chemical</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/CHEBI_59999</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/Class -->
+
+    <owl:Class rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Class">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/Phylum"/>
+        <rdfs:comment xml:lang="en">A collection of taxonomic subdivisions directly under Phylum. It is a major group of organisms, e.g. Mammalia, Reptilia, Gastropoda, Insecta, etc that contains a large number of different sublineages, but have shared characteristics in common (e.g. warm-blooded, fur, six legs etc). [Definition Source: NCIT]</rdfs:comment>
+        <rdfs:label xml:lang="en">Class</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/NCIT_C45280</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/DietarySupplement -->
+
+    <owl:Class rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/DietarySupplement">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/Food"/>
+        <rdfs:comment xml:lang="en">Oral preparations containing dietary ingredient(s) intended to supplement the diet. Dietary ingredients include vitamins, minerals, herbs, amino acids, extracts and metabolites. [Definition Source: NCIT]</rdfs:comment>
+        <rdfs:label xml:lang="en">Dietary Supplement</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/NCIT_C1505</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/Domain -->
+
+    <owl:Class rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Domain">
+        <rdfs:comment xml:lang="en">A taxonomic category above that of Kingdom.</rdfs:comment>
+        <rdfs:label xml:lang="en">Domain</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/NCIT_C62706</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/Drug -->
+
+    <owl:Class rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Drug">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/brainteaser/ontology/schema/InterventionOrProcedure"/>
+        <rdfs:comment xml:lang="en">Any substance which when absorbed into a living organism may modify one or more of its functions. The term is generally accepted for a substance taken for a therapeutic purpose, but is also commonly used for abused substances. [Definition Source: CHEBI]</rdfs:comment>
+        <rdfs:label xml:lang="en">Drug</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/CHEBI_23888</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/ExperimentalResult -->
+
+    <owl:Class rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/ExperimentalResult">
+        <rdfs:comment xml:lang="en">The outcome of an experiment or set of experiments, including observations and primary, processed, and analyzed data. [Definition Source: NCIT]</rdfs:comment>
+        <rdfs:label xml:lang="en">Experimental Result</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/NCIT_C76125</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/Family -->
+
+    <owl:Class rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Family">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/Order"/>
+        <rdfs:comment xml:lang="en">A taxonomic category between Order and Genus. It consists of a group of organisms among which the differences are quite minor, e.g. Equiidae - horses and their relatives. [Definition Source: NCIT]</rdfs:comment>
+        <rdfs:label xml:lang="en">Family</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/NCIT_C45290</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/Food -->
+
+    <owl:Class rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Food">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/brainteaser/ontology/schema/InterventionOrProcedure"/>
+        <rdfs:comment xml:lang="en">A functional unit of heredity which occupies a specific position on a particular chromosome and serves as the template for a product that contributes to a phenotype or a biological function. [Definition Source: SNOMEDCT]</rdfs:comment>
+        <rdfs:label xml:lang="en">Food</rdfs:label>
+        <skos:exactMatch>http://purl.bioontology.org/ontology/SNOMEDCT/67271001</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/Genome -->
+
+    <owl:Class rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Genome">
+        <rdfs:comment xml:lang="en">The genetic complement of an organism, including all of its GENES, as represented in its DNA, or in some cases, its RNA. [Definition Source: MeSH]</rdfs:comment>
+        <rdfs:label xml:lang="en">Genome</rdfs:label>
+        <skos:exactMatch>https://www.ncbi.nlm.nih.gov/mesh/68016678</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/Genus -->
+
+    <owl:Class rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Genus">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/Family"/>
+        <rdfs:comment xml:lang="en">A taxonomic category ranking below a family (or Subfamily) and above a species and generally consisting of a group of species exhibiting similar characteristics. [Definition Source: NCIT]</rdfs:comment>
+        <rdfs:label xml:lang="en">Genus</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/NCIT_C45292</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/Human -->
+
+    <owl:Class rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Human">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/Organism"/>
+        <rdfs:comment xml:lang="en">Members of the species Homo sapiens. [Definition Source: NCBI]</rdfs:comment>
+        <rdfs:label xml:lang="en">Human</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/NCBITaxon_9606</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/Mention -->
+
+    <owl:Class rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Mention">
+        <rdfs:comment xml:lang="en">Word or Phrase that is inside a sentence.</rdfs:comment>
+        <rdfs:label xml:lang="en">Mention</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/Metabolite -->
+
+    <owl:Class rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Metabolite">
+        <rdfs:comment xml:lang="en">Any substance involved in metabolism, either as a product of metabolism or as necessary for metabolism. [Definition Source: NCIT]</rdfs:comment>
+        <rdfs:label xml:lang="en">Metabolite</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/CHEBI:25212</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/Microbiome -->
+
+    <owl:Class rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Microbiome">
+        <rdfs:comment xml:lang="en">This term refers to the entire habitat, including the microorganisms (bacteria, archaea, lower and higher eukaryotes, and viruses), their genomes (i.e., genes), and the surrounding environmental conditions. [Definition Source: OHMI]</rdfs:comment>
+        <rdfs:label xml:lang="en">Microbiome</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/OHMI_0000003</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/Microbiota -->
+
+    <owl:Class rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Microbiota">
+        <rdfs:comment xml:lang="en">Microbiota are the range of microorganisms that may be commensal, mutualistic, or pathogenic found in and on all multicellular organisms, including plants. [Definition Source: Wikipedia]</rdfs:comment>
+        <rdfs:label xml:lang="en">Microbiota</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/NCIT_C93019</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/Neurotransmitter -->
+
+    <owl:Class rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Neurotransmitter">
+        <rdfs:comment xml:lang="en">Endogenous signaling molecules that alter the behavior of neurons or effector cells. Neurotransmitter is used here in its most general sense, including not only messengers that act directly to regulate ion channels, but also those that act through second messenger systems, and those that act at a distance from their site of release. Included are neuromodulators, neuroregulators, neuromediators, and neurohumors, whether or not acting at synapses. [Definition Source: NCIT]</rdfs:comment>
+        <rdfs:label xml:lang="en">Neurotransmitter</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/NCIT_C687</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/Order -->
+
+    <owl:Class rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Order">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/Class"/>
+        <rdfs:comment xml:lang="en">A taxonomic category between Class and Family. It is group of organisms that although differing quite a bit among themselves still have a large degree of characteristics in common. [Definition Source: NCIT]</rdfs:comment>
+        <rdfs:label xml:lang="en">Order</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/NCIT_C45287</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/Organism -->
+
+    <owl:Class rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Organism">
+        <rdfs:comment xml:lang="en">A living entity. [Definition Source: NCIT]</rdfs:comment>
+        <rdfs:label xml:lang="en">Organism</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/NCIT_C14250</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/Paper -->
+
+    <owl:Class rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Paper">
+        <rdfs:comment xml:lang="en">An article reporting original research, published in a peer-reviewed journal. [Definition Source: ONTOAVIDA]</rdfs:comment>
+        <rdfs:label xml:lang="en">Paper</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/PaperAbstract -->
+
+    <owl:Class rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/PaperAbstract">
+        <rdfs:comment xml:lang="en">A written summary of the important points of a scientific article. [Definition Source: NCIT]</rdfs:comment>
+        <rdfs:label xml:lang="en">Paper Abstract</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/PaperCollection -->
+
+    <owl:Class rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/PaperCollection">
+        <rdfs:comment xml:lang="en">The type of the collection where the papers are stored.</rdfs:comment>
+        <rdfs:label xml:lang="en">Paper Collection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/PaperTitle -->
+
+    <owl:Class rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/PaperTitle">
+        <rdfs:comment xml:lang="en">An official descriptive name of a document, e.g. the long name of a study protocol provided by the study sponsor. [Definition Source: NCIT]</rdfs:comment>
+        <rdfs:label xml:lang="en">Paper Title</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/Phylum -->
+
+    <owl:Class rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Phylum">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/SuperKingdom"/>
+        <rdfs:comment xml:lang="en">A major division of a biological kingdom, consisting of closely-related classes; represents a basic fundamental pattern of organization and, presumably, a common descent. [Definition Source: NCIT]</rdfs:comment>
+        <rdfs:label xml:lang="en">Phylum</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/NCIT_C45277</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/Sentence -->
+
+    <owl:Class rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Sentence">
+        <rdfs:comment xml:lang="en">A set of words that is complete in itself, conveying a statement, question, exclamation, or command and typically containing an explicit or implied subject and a predicate containing a finite verb. [Definition Source: NCIT]</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.obolibrary.org/obo/NCIT_C62638</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Sentence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/Species -->
+
+    <owl:Class rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Species">
+        <rdfs:comment xml:lang="en">A group of organisms that differ from all other groups of organisms and that are capable of breeding and producing fertile offspring. [Definition Source: NCIT]</rdfs:comment>
+        <rdfs:label xml:lang="en">Species</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/NCIT_C45293</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/Specimen -->
+
+    <owl:Class rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/Specimen">
+        <rdfs:comment xml:lang="en">A material entity that is collected for potential use as an input upon which measurements or observations are performed. [Definition Source: OBI]</rdfs:comment>
+        <rdfs:label xml:lang="en">Specimen</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/OBI_0100051</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/SpecimenCollectionProcess -->
+
+    <owl:Class rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/SpecimenCollectionProcess">
+        <rdfs:comment xml:lang="en">A planned process with the objective to obtain a material entity for potential use as an input upon which measurements or observations are performed. [Definition Source: OBI]</rdfs:comment>
+        <rdfs:label xml:lang="en">Specimen Collection Process</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/OBI_0000659</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/StatisticalTechnique -->
+
+    <owl:Class rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/StatisticalTechnique">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hereditary/ontology/genomics/schema/Assay"/>
+        <rdfs:comment xml:lang="en">A method of calculating, analyzing, or representing statistical data. [Definition Source: NCIT]</rdfs:comment>
+        <rdfs:label xml:lang="en">Statistical Technique</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/NCIT_C19044</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/hereditary/ontology/gutbrain/schema/SuperKingdom -->
+
+    <owl:Class rdf:about="https://w3id.org/hereditary/ontology/gutbrain/schema/SuperKingdom">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/hereditary/ontology/gutbrain/schema/Domain"/>
+        <rdfs:comment xml:lang="en">The highest taxonomic rank, immediately above phylum or division. There are five biological kingdoms (Monera, Protista, Plantae, Fungi, Animalia) into which organisms are grouped, based on common characteristics. [Definition Source: NCIT]</rdfs:comment>
+        <rdfs:label xml:lang="en">Super Kingdom</rdfs:label>
+        <skos:exactMatch>http://purl.obolibrary.org/obo/NCIT_C45276</skos:exactMatch>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMIT_0003283">
+        <rdfs:comment>Brain_diseases refers to a collective term for various medical conditions that affect the structure or function of the brain, including neurological disorders, neurodegenerative diseases, and psychiatric conditions. [Definition Source: llama3-8b-8192]</rdfs:comment>
+        <rdfs:comment>OMIT Match</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
