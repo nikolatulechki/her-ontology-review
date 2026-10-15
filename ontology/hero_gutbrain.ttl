@@ -2,13 +2,16 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcmitype: <http://purl.org/dc/dcmitype/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix edam: <http://edamontology.org/> .
 @prefix genomics: <https://w3id.org/hereditary/ontology/genomics/schema/> .
 @prefix gutbrain: <https://w3id.org/hereditary/ontology/gutbrain/schema/> .
+@prefix mesh: <https://www.ncbi.nlm.nih.gov/mesh/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix snomed: <http://purl.bioontology.org/ontology/SNOMEDCT/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 obo:OMIT_0003283 rdfs:comment "Brain_diseases refers to a collective term for various medical conditions that affect the structure or function of the brain, including neurological disorders, neurodegenerative diseases, and psychiatric conditions. [Definition Source: llama3-8b-8192]",
@@ -259,7 +262,7 @@ This work has been supported by the HEREDITARY project
 gutbrain:ExperimentalResult a owl:Class ;
     rdfs:label "Experimental Result"@en ;
     rdfs:comment "The outcome of an experiment or set of experiments, including observations and primary, processed, and analyzed data. [Definition Source: NCIT]"@en ;
-    skos:exactMatch "http://purl.obolibrary.org/obo/NCIT_C76125" .
+    skos:exactMatch obo:NCIT_C76125 .
 
 gutbrain:PaperCollection a owl:Class ;
     rdfs:label "Paper Collection"@en ;
@@ -268,17 +271,17 @@ gutbrain:PaperCollection a owl:Class ;
 gutbrain:Species a owl:Class ;
     rdfs:label "Species"@en ;
     rdfs:comment "A group of organisms that differ from all other groups of organisms and that are capable of breeding and producing fertile offspring. [Definition Source: NCIT]"@en ;
-    skos:exactMatch "http://purl.obolibrary.org/obo/NCIT_C45293" .
+    skos:exactMatch obo:NCIT_C45293 .
 
 gutbrain:Specimen a owl:Class ;
     rdfs:label "Specimen"@en ;
     rdfs:comment "A material entity that is collected for potential use as an input upon which measurements or observations are performed. [Definition Source: OBI]"@en ;
-    skos:exactMatch "http://purl.obolibrary.org/obo/OBI_0100051" .
+    skos:exactMatch obo:OBI_0100051 .
 
 gutbrain:SpecimenCollectionProcess a owl:Class ;
     rdfs:label "Specimen Collection Process"@en ;
     rdfs:comment "A planned process with the objective to obtain a material entity for potential use as an input upon which measurements or observations are performed. [Definition Source: OBI]"@en ;
-    skos:exactMatch "http://purl.obolibrary.org/obo/OBI_0000659" .
+    skos:exactMatch obo:OBI_0000659 .
 
 gutbrain:administered a owl:ObjectProperty ;
     rdfs:label "administered"@en ;
@@ -575,58 +578,58 @@ gutbrain:Class a owl:Class ;
     rdfs:label "Class"@en ;
     rdfs:comment "A collection of taxonomic subdivisions directly under Phylum. It is a major group of organisms, e.g. Mammalia, Reptilia, Gastropoda, Insecta, etc that contains a large number of different sublineages, but have shared characteristics in common (e.g. warm-blooded, fur, six legs etc). [Definition Source: NCIT]"@en ;
     rdfs:subClassOf gutbrain:Phylum ;
-    skos:exactMatch "http://purl.obolibrary.org/obo/NCIT_C45280" .
+    skos:exactMatch obo:NCIT_C45280 .
 
 gutbrain:Domain a owl:Class ;
     rdfs:label "Domain"@en ;
     rdfs:comment "A taxonomic category above that of Kingdom."@en ;
-    skos:exactMatch "http://purl.obolibrary.org/obo/NCIT_C62706" .
+    skos:exactMatch obo:NCIT_C62706 .
 
 gutbrain:Family a owl:Class ;
     rdfs:label "Family"@en ;
     rdfs:comment "A taxonomic category between Order and Genus. It consists of a group of organisms among which the differences are quite minor, e.g. Equiidae - horses and their relatives. [Definition Source: NCIT]"@en ;
     rdfs:subClassOf gutbrain:Order ;
-    skos:exactMatch "http://purl.obolibrary.org/obo/NCIT_C45290" .
+    skos:exactMatch obo:NCIT_C45290 .
 
 gutbrain:Genus a owl:Class ;
     rdfs:label "Genus"@en ;
     rdfs:comment "A taxonomic category ranking below a family (or Subfamily) and above a species and generally consisting of a group of species exhibiting similar characteristics. [Definition Source: NCIT]"@en ;
     rdfs:subClassOf gutbrain:Family ;
-    skos:exactMatch "http://purl.obolibrary.org/obo/NCIT_C45292" .
+    skos:exactMatch obo:NCIT_C45292 .
 
 gutbrain:Microbiota a owl:Class ;
     rdfs:label "Microbiota"@en ;
     rdfs:comment "Microbiota are the range of microorganisms that may be commensal, mutualistic, or pathogenic found in and on all multicellular organisms, including plants. [Definition Source: Wikipedia]"@en ;
-    skos:exactMatch "http://purl.obolibrary.org/obo/NCIT_C93019" .
+    skos:exactMatch obo:NCIT_C93019 .
 
 gutbrain:Neurotransmitter a owl:Class ;
     rdfs:label "Neurotransmitter"@en ;
     rdfs:comment "Endogenous signaling molecules that alter the behavior of neurons or effector cells. Neurotransmitter is used here in its most general sense, including not only messengers that act directly to regulate ion channels, but also those that act through second messenger systems, and those that act at a distance from their site of release. Included are neuromodulators, neuroregulators, neuromediators, and neurohumors, whether or not acting at synapses. [Definition Source: NCIT]"@en ;
-    skos:exactMatch "http://purl.obolibrary.org/obo/NCIT_C687" .
+    skos:exactMatch obo:NCIT_C687 .
 
 gutbrain:Order a owl:Class ;
     rdfs:label "Order"@en ;
     rdfs:comment "A taxonomic category between Class and Family. It is group of organisms that although differing quite a bit among themselves still have a large degree of characteristics in common. [Definition Source: NCIT]"@en ;
     rdfs:subClassOf gutbrain:Class ;
-    skos:exactMatch "http://purl.obolibrary.org/obo/NCIT_C45287" .
+    skos:exactMatch obo:NCIT_C45287 .
 
 gutbrain:Phylum a owl:Class ;
     rdfs:label "Phylum"@en ;
     rdfs:comment "A major division of a biological kingdom, consisting of closely-related classes; represents a basic fundamental pattern of organization and, presumably, a common descent. [Definition Source: NCIT]"@en ;
     rdfs:subClassOf gutbrain:SuperKingdom ;
-    skos:exactMatch "http://purl.obolibrary.org/obo/NCIT_C45277" .
+    skos:exactMatch obo:NCIT_C45277 .
 
 gutbrain:StatisticalTechnique a owl:Class ;
     rdfs:label "Statistical Technique"@en ;
     rdfs:comment "A method of calculating, analyzing, or representing statistical data. [Definition Source: NCIT]"@en ;
     rdfs:subClassOf genomics:Assay ;
-    skos:exactMatch "http://purl.obolibrary.org/obo/NCIT_C19044" .
+    skos:exactMatch obo:NCIT_C19044 .
 
 gutbrain:SuperKingdom a owl:Class ;
     rdfs:label "Super Kingdom"@en ;
     rdfs:comment "The highest taxonomic rank, immediately above phylum or division. There are five biological kingdoms (Monera, Protista, Plantae, Fungi, Animalia) into which organisms are grouped, based on common characteristics. [Definition Source: NCIT]"@en ;
     rdfs:subClassOf gutbrain:Domain ;
-    skos:exactMatch "http://purl.obolibrary.org/obo/NCIT_C45276" .
+    skos:exactMatch obo:NCIT_C45276 .
 
 dc:identifier a owl:AnnotationProperty ;
     rdfs:label "Identifier"@en ;
@@ -664,35 +667,35 @@ gutbrain:Animal a owl:Class ;
     rdfs:label "Animal"@en ;
     rdfs:comment "A non-human living organism that has membranous cell walls, requires oxygen and organic foods, and is capable of voluntary movement, as distinguished from a plant or mineral. [Definition Source: NCIT]"@en ;
     rdfs:subClassOf gutbrain:Organism ;
-    skos:exactMatch "http://purl.obolibrary.org/obo/NCIT_C14182" .
+    skos:exactMatch obo:NCIT_C14182 .
 
 gutbrain:BiomedicalTechnique a owl:Class ;
     rdfs:label "Biomedical Technique"@en ;
     rdfs:comment "Research concerned with the application of biological and physiological principles to clinical medicine. [Definition Source: NCIT]"@en ;
     rdfs:subClassOf genomics:Assay ;
-    skos:exactMatch "http://purl.obolibrary.org/obo/NCIT_C15188" .
+    skos:exactMatch obo:NCIT_C15188 .
 
 gutbrain:Food a owl:Class ;
     rdfs:label "Food"@en ;
     rdfs:comment "A functional unit of heredity which occupies a specific position on a particular chromosome and serves as the template for a product that contributes to a phenotype or a biological function. [Definition Source: SNOMEDCT]"@en ;
     rdfs:subClassOf bto:InterventionOrProcedure ;
-    skos:exactMatch "http://purl.bioontology.org/ontology/SNOMEDCT/67271001" .
+    skos:exactMatch snomed:67271001 .
 
 gutbrain:Genome a owl:Class ;
     rdfs:label "Genome"@en ;
     rdfs:comment "The genetic complement of an organism, including all of its GENES, as represented in its DNA, or in some cases, its RNA. [Definition Source: MeSH]"@en ;
-    skos:exactMatch "https://www.ncbi.nlm.nih.gov/mesh/68016678" .
+    skos:exactMatch mesh:68016678 .
 
 gutbrain:Human a owl:Class ;
     rdfs:label "Human"@en ;
     rdfs:comment "Members of the species Homo sapiens. [Definition Source: NCBI]"@en ;
     rdfs:subClassOf gutbrain:Organism ;
-    skos:exactMatch "http://purl.obolibrary.org/obo/NCBITaxon_9606" .
+    skos:exactMatch obo:NCBITaxon_9606 .
 
 gutbrain:Metabolite a owl:Class ;
     rdfs:label "Metabolite"@en ;
     rdfs:comment "Any substance involved in metabolism, either as a product of metabolism or as necessary for metabolism. [Definition Source: NCIT]"@en ;
-    skos:exactMatch "http://purl.obolibrary.org/obo/CHEBI:25212" .
+    skos:exactMatch obo:CHEBI_25212 .
 
 dc:coverage a owl:AnnotationProperty ;
     rdfs:label "Coverage"@en ;
@@ -729,7 +732,7 @@ dc:rights a owl:AnnotationProperty ;
 bto:Gene a owl:Class ;
     rdfs:label "Gene"@en ;
     rdfs:comment "A functional unit of heredity which occupies a specific position on a particular chromosome and serves as the template for a product that contributes to a phenotype or a biological function. [Definition Source: NCIT]"@en ;
-    skos:exactMatch "http://purl.bioontology.org/ontology/SNOMEDCT/67271001" .
+    skos:exactMatch snomed:67271001 .
 
 genomics:Assay a owl:Class ;
     rdfs:label "Assay"@en ;
@@ -740,7 +743,7 @@ gutbrain:DietarySupplement a owl:Class ;
     rdfs:label "Dietary Supplement"@en ;
     rdfs:comment "Oral preparations containing dietary ingredient(s) intended to supplement the diet. Dietary ingredients include vitamins, minerals, herbs, amino acids, extracts and metabolites. [Definition Source: NCIT]"@en ;
     rdfs:subClassOf gutbrain:Food ;
-    skos:exactMatch "http://purl.obolibrary.org/obo/NCIT_C1505" .
+    skos:exactMatch obo:NCIT_C1505 .
 
 gutbrain:Mention a owl:Class ;
     rdfs:label "Mention"@en ;
@@ -749,13 +752,13 @@ gutbrain:Mention a owl:Class ;
 bto:AnatomicalSite a owl:Class ;
     rdfs:label "Anatomic Site"@en ;
     rdfs:comment "Named locations of or within the body. [Definition Source: NCIT]"@en ;
-    skos:exactMatch "http://purl.obolibrary.org/obo/NCIT_C13717" .
+    skos:exactMatch obo:NCIT_C13717 .
 
 gutbrain:Chemical a owl:Class ;
     rdfs:label "Chemical"@en ;
     rdfs:comment "A chemical substance is a portion of matter of constant composition, composed of molecular entities of the same type or of different types. [Definition Source: CHEBI]"@en ;
     rdfs:subClassOf bto:InterventionOrProcedure ;
-    skos:exactMatch "http://purl.obolibrary.org/obo/CHEBI_59999" .
+    skos:exactMatch obo:CHEBI_59999 .
 
 gutbrain:PaperAbstract a owl:Class ;
     rdfs:label "Paper Abstract"@en ;
@@ -774,18 +777,18 @@ gutbrain:Drug a owl:Class ;
     rdfs:label "Drug"@en ;
     rdfs:comment "Any substance which when absorbed into a living organism may modify one or more of its functions. The term is generally accepted for a substance taken for a therapeutic purpose, but is also commonly used for abused substances. [Definition Source: CHEBI]"@en ;
     rdfs:subClassOf bto:InterventionOrProcedure ;
-    skos:exactMatch "http://purl.obolibrary.org/obo/CHEBI_23888" .
+    skos:exactMatch obo:CHEBI_23888 .
 
 gutbrain:Organism a owl:Class ;
     rdfs:label "Organism"@en ;
     rdfs:comment "A living entity. [Definition Source: NCIT]"@en ;
-    skos:exactMatch "http://purl.obolibrary.org/obo/NCIT_C14250" .
+    skos:exactMatch obo:NCIT_C14250 .
 
 genomics:Species a owl:Class ;
     rdfs:label "Species"@en ;
     rdfs:comment "A group of organisms that differ from all other groups of organisms and that are capable of breeding and producing fertile offspring. [Definition Source: NCIT]"@en ;
     rdfs:subClassOf gutbrain:Genus ;
-    skos:exactMatch "http://edamontology.org/data_1045" .
+    skos:exactMatch edam:data_1045 .
 
 dcterms:date a owl:AnnotationProperty,
         owl:DatatypeProperty ;
@@ -807,17 +810,17 @@ dc:date a owl:AnnotationProperty ;
 bto:InterventionOrProcedure a owl:Class ;
     rdfs:label "Intervention or Procedure"@en ;
     rdfs:comment "An activity that produces an effect, or that is intended to alter the course of a disease in a patient or population. This is a general term that encompasses the medical, social, behavioral, and environmental acts that can have preventive, therapeutic, or palliative effects. [Definition Source: NCIT]"@en ;
-    skos:exactMatch "http://purl.obolibrary.org/obo/NCIT_C25218" .
+    skos:exactMatch obo:NCIT_C25218 .
 
 bto:DiseaseDisorderOrFinding a owl:Class ;
     rdfs:label "Disease, Disorder or Finding"@en ;
     rdfs:comment "A condition that is relevant to human neoplasms and non-neoplastic disorders. This includes observations, test results, history and other concepts relevant to the characterization of human pathologic conditions. [Definition Source: NCIT]"@en ;
-    skos:exactMatch "http://purl.obolibrary.org/obo/NCIT_C7057" .
+    skos:exactMatch obo:NCIT_C7057 .
 
 gutbrain:Microbiome a owl:Class ;
     rdfs:label "Microbiome"@en ;
     rdfs:comment "This term refers to the entire habitat, including the microorganisms (bacteria, archaea, lower and higher eukaryotes, and viruses), their genomes (i.e., genes), and the surrounding environmental conditions. [Definition Source: OHMI]"@en ;
-    skos:exactMatch "http://purl.obolibrary.org/obo/OHMI_0000003" .
+    skos:exactMatch obo:OHMI_0000003 .
 
 dc:relation a owl:AnnotationProperty ;
     rdfs:label "Relation"@en ;

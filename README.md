@@ -54,3 +54,5 @@ never use the naked prefix in a production ontology.
 in this case we already have one `gutbrain`
 
 I fix gutbrain: prefix and the uri dor the ontology with a trailing / sot that it is pretty in the turtle
+
+Turned all `skos:exactMatch` values from string literals into prefixed IRIs (`obo:`, `snomed:`, `mesh:`, `edam:`); normalized one `CHEBI:25212` to `obo:CHEBI_25212`.
