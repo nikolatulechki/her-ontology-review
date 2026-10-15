@@ -1,5 +1,4 @@
 @prefix bto: <https://w3id.org/brainteaser/ontology/schema/> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix dcmitype: <http://purl.org/dc/dcmitype/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix edam: <http://edamontology.org/> .
@@ -42,12 +41,10 @@ dcterms:URI a rdfs:Datatype .
 dcterms:W3CDTF a rdfs:Datatype .
 
 dcterms:abstract a owl:AnnotationProperty ;
-    rdfs:subPropertyOf dc:description,
-        dcterms:description .
+    rdfs:subPropertyOf dcterms:description .
 
 dcterms:accessRights a owl:AnnotationProperty ;
-    rdfs:subPropertyOf dc:rights,
-        dcterms:rights .
+    rdfs:subPropertyOf dcterms:rights .
 
 dcterms:accrualMethod a owl:AnnotationProperty ;
     rdfs:domain dcmitype:Collection .
@@ -61,167 +58,132 @@ dcterms:accrualPolicy a owl:AnnotationProperty ;
 dcterms:alternative a owl:AnnotationProperty,
         owl:DatatypeProperty ;
     rdfs:range rdfs:Literal ;
-    rdfs:subPropertyOf dc:title,
-        dcterms:title .
+    rdfs:subPropertyOf dcterms:title .
 
 dcterms:available a owl:AnnotationProperty,
         owl:DatatypeProperty ;
     rdfs:range rdfs:Literal ;
-    rdfs:subPropertyOf dc:date,
-        dcterms:date .
+    rdfs:subPropertyOf dcterms:date .
 
 dcterms:bibliographicCitation a owl:AnnotationProperty,
         owl:DatatypeProperty ;
     rdfs:range rdfs:Literal ;
-    rdfs:subPropertyOf dc:identifier,
-        dcterms:identifier .
+    rdfs:subPropertyOf dcterms:identifier .
 
 dcterms:conformsTo a owl:AnnotationProperty ;
-    rdfs:subPropertyOf dc:relation,
-        dcterms:relation .
+    rdfs:subPropertyOf dcterms:relation .
 
 dcterms:created a owl:AnnotationProperty,
         owl:DatatypeProperty ;
     rdfs:range rdfs:Literal ;
-    rdfs:subPropertyOf dc:date,
-        dcterms:date .
+    rdfs:subPropertyOf dcterms:date .
 
 dcterms:creator rdfs:label "Creator"@en ;
     dcterms:description "Recommended practice is to identify the creator with a URI.  If this is not possible or feasible, a literal value that identifies the creator may be provided."@en ;
     dcterms:issued "2008-01-14"^^xsd:date ;
     rdfs:comment "An entity responsible for making the resource."@en ;
-    rdfs:subPropertyOf dc:creator,
-        dcterms:contributor .
+    rdfs:subPropertyOf dcterms:contributor .
 
 dcterms:dateAccepted a owl:AnnotationProperty,
         owl:DatatypeProperty ;
     rdfs:range rdfs:Literal ;
-    rdfs:subPropertyOf dc:date,
-        dcterms:date .
+    rdfs:subPropertyOf dcterms:date .
 
 dcterms:dateCopyrighted a owl:AnnotationProperty,
         owl:DatatypeProperty ;
     rdfs:range rdfs:Literal ;
-    rdfs:subPropertyOf dc:date,
-        dcterms:date .
+    rdfs:subPropertyOf dcterms:date .
 
 dcterms:dateSubmitted a owl:AnnotationProperty,
         owl:DatatypeProperty ;
     rdfs:range rdfs:Literal ;
-    rdfs:subPropertyOf dc:date,
-        dcterms:date .
+    rdfs:subPropertyOf dcterms:date .
 
 dcterms:educationLevel a owl:AnnotationProperty ;
     rdfs:subPropertyOf dcterms:audience .
 
 dcterms:extent a owl:AnnotationProperty ;
-    rdfs:subPropertyOf dc:format,
-        dcterms:format .
+    rdfs:subPropertyOf dcterms:format .
 
 dcterms:hasFormat a owl:AnnotationProperty ;
-    rdfs:subPropertyOf dc:relation,
-        dcterms:relation .
+    rdfs:subPropertyOf dcterms:relation .
 
 dcterms:hasPart a owl:AnnotationProperty ;
-    rdfs:subPropertyOf dc:relation,
-        dcterms:relation .
+    rdfs:subPropertyOf dcterms:relation .
 
 dcterms:hasVersion a owl:AnnotationProperty ;
-    rdfs:subPropertyOf dc:relation,
-        dcterms:relation .
+    rdfs:subPropertyOf dcterms:relation .
 
 dcterms:isFormatOf a owl:AnnotationProperty ;
-    rdfs:subPropertyOf dc:relation,
-        dcterms:relation .
+    rdfs:subPropertyOf dcterms:relation .
 
 dcterms:isPartOf a owl:AnnotationProperty ;
-    rdfs:subPropertyOf dc:relation,
-        dcterms:relation .
+    rdfs:subPropertyOf dcterms:relation .
 
 dcterms:isReferencedBy a owl:AnnotationProperty ;
-    rdfs:subPropertyOf dc:relation,
-        dcterms:relation .
+    rdfs:subPropertyOf dcterms:relation .
 
 dcterms:isReplacedBy a owl:AnnotationProperty ;
-    rdfs:subPropertyOf dc:relation,
-        dcterms:relation .
+    rdfs:subPropertyOf dcterms:relation .
 
 dcterms:isRequiredBy a owl:AnnotationProperty ;
-    rdfs:subPropertyOf dc:relation,
-        dcterms:relation .
+    rdfs:subPropertyOf dcterms:relation .
 
 dcterms:isVersionOf a owl:AnnotationProperty ;
-    rdfs:subPropertyOf dc:relation,
-        dcterms:relation .
+    rdfs:subPropertyOf dcterms:relation .
 
 dcterms:issued a owl:AnnotationProperty,
         owl:DatatypeProperty ;
     rdfs:range rdfs:Literal ;
-    rdfs:subPropertyOf dc:date,
-        dcterms:date .
+    rdfs:subPropertyOf dcterms:date .
 
-dcterms:language a owl:AnnotationProperty ;
-    rdfs:subPropertyOf dc:language .
+dcterms:language a owl:AnnotationProperty .
 
 dcterms:license a owl:AnnotationProperty ;
-    rdfs:subPropertyOf dc:rights,
-        dcterms:rights .
+    rdfs:subPropertyOf dcterms:rights .
 
 dcterms:mediator a owl:AnnotationProperty ;
     rdfs:subPropertyOf dcterms:audience .
 
 dcterms:medium a owl:AnnotationProperty ;
-    rdfs:subPropertyOf dc:format,
-        dcterms:format .
+    rdfs:subPropertyOf dcterms:format .
 
 dcterms:modified a owl:AnnotationProperty,
         owl:DatatypeProperty ;
     rdfs:range rdfs:Literal ;
-    rdfs:subPropertyOf dc:date,
-        dcterms:date .
+    rdfs:subPropertyOf dcterms:date .
 
-dcterms:publisher a owl:AnnotationProperty ;
-    rdfs:subPropertyOf dc:publisher .
+dcterms:publisher a owl:AnnotationProperty .
 
 dcterms:references a owl:AnnotationProperty ;
-    rdfs:subPropertyOf dc:relation,
-        dcterms:relation .
+    rdfs:subPropertyOf dcterms:relation .
 
 dcterms:replaces a owl:AnnotationProperty ;
-    rdfs:subPropertyOf dc:relation,
-        dcterms:relation .
+    rdfs:subPropertyOf dcterms:relation .
 
 dcterms:requires a owl:AnnotationProperty ;
-    rdfs:subPropertyOf dc:relation,
-        dcterms:relation .
+    rdfs:subPropertyOf dcterms:relation .
 
 dcterms:source a owl:AnnotationProperty ;
-    rdfs:subPropertyOf dc:source,
-        dcterms:relation .
+    rdfs:subPropertyOf dcterms:relation .
 
 dcterms:spatial a owl:AnnotationProperty ;
-    rdfs:subPropertyOf dc:coverage,
-        dcterms:coverage .
+    rdfs:subPropertyOf dcterms:coverage .
 
-dcterms:subject a owl:AnnotationProperty ;
-    rdfs:subPropertyOf dc:subject .
+dcterms:subject a owl:AnnotationProperty .
 
 dcterms:tableOfContents a owl:AnnotationProperty ;
-    rdfs:subPropertyOf dc:description,
-        dcterms:description .
+    rdfs:subPropertyOf dcterms:description .
 
 dcterms:temporal a owl:AnnotationProperty ;
-    rdfs:subPropertyOf dc:coverage,
-        dcterms:coverage .
+    rdfs:subPropertyOf dcterms:coverage .
 
-dcterms:type a owl:AnnotationProperty ;
-    rdfs:subPropertyOf dc:type .
+dcterms:type a owl:AnnotationProperty .
 
 dcterms:valid a owl:AnnotationProperty,
         owl:DatatypeProperty ;
     rdfs:range rdfs:Literal ;
-    rdfs:subPropertyOf dc:date,
-        dcterms:date .
+    rdfs:subPropertyOf dcterms:date .
 
 rdfs:Class a owl:Class .
 
@@ -501,76 +463,17 @@ gutbrain:usedBy a owl:ObjectProperty ;
             owl:unionOf ( gutbrain:Animal gutbrain:Human gutbrain:Microbiome ) ] ;
     rdfs:range gutbrain:BiomedicalTechnique .
 
-dc:contributor a owl:AnnotationProperty ;
-    rdfs:label "Contributor"@en ;
-    dcterms:description "The guidelines for using names of persons or organizations as creators also apply to contributors.  Typically, the name of a Contributor should be used to indicate the entity."@en ;
-    dcterms:issued "1999-07-02"^^xsd:date ;
-    rdfs:comment "An entity responsible for making contributions to the resource."@en ;
-    rdfs:isDefinedBy dc: ;
-    skos:note "A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/contributor) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation."@en .
-
-dc:creator a owl:AnnotationProperty ;
-    rdfs:label "Creator"@en ;
-    dcterms:description "Examples of a Creator include a person, an organization, or a service. Typically, the name of a Creator should be used to indicate the entity."@en ;
-    dcterms:issued "1999-07-02"^^xsd:date ;
-    rdfs:comment "An entity primarily responsible for making the resource."@en ;
-    rdfs:isDefinedBy dc: ;
-    skos:note "A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/creator) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation."@en .
-
-dc:language a owl:AnnotationProperty ;
-    rdfs:label "Language"@en ;
-    dcterms:description "Recommended practice is to use either a non-literal value representing a language from a controlled vocabulary such as ISO 639-2 or ISO 639-3, or a literal value consisting of an IETF Best Current Practice 47 [[IETF-BCP47](https://tools.ietf.org/html/bcp47)] language tag."@en ;
-    dcterms:issued "1999-07-02"^^xsd:date ;
-    rdfs:comment "A language of the resource."@en ;
-    rdfs:isDefinedBy dc: ;
-    skos:note "A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/language) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation."@en .
-
-dc:publisher a owl:AnnotationProperty ;
-    rdfs:label "Publisher"@en ;
-    dcterms:description "Examples of a Publisher include a person, an organization, or a service. Typically, the name of a Publisher should be used to indicate the entity."@en ;
-    dcterms:issued "1999-07-02"^^xsd:date ;
-    rdfs:comment "An entity responsible for making the resource available."@en ;
-    rdfs:isDefinedBy dc: ;
-    skos:note "A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/publisher) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation."@en .
-
-dc:source a owl:AnnotationProperty ;
-    rdfs:label "Source"@en ;
-    dcterms:description "The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system."@en ;
-    dcterms:issued "1999-07-02"^^xsd:date ;
-    rdfs:comment "A related resource from which the described resource is derived."@en ;
-    rdfs:isDefinedBy dc: ;
-    skos:note "A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/source) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation."@en .
-
-dc:subject a owl:AnnotationProperty ;
-    rdfs:label "Subject"@en ;
-    dcterms:description "Typically, the subject will be represented using keywords, key phrases, or classification codes.  Recommended best practice is to use a controlled vocabulary."@en ;
-    dcterms:issued "1999-07-02"^^xsd:date ;
-    rdfs:comment "The topic of the resource."@en ;
-    rdfs:isDefinedBy dc: ;
-    skos:note "A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/subject) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation."@en .
-
-dc:type a owl:AnnotationProperty ;
-    rdfs:label "Type"@en ;
-    dcterms:description "Recommended practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [[DCMI-TYPE](http://dublincore.org/documents/dcmi-type-vocabulary/)]. To describe the file format, physical medium, or dimensions of the resource, use the Format element."@en ;
-    dcterms:issued "1999-07-02"^^xsd:date ;
-    rdfs:comment "The nature or genre of the resource."@en ;
-    rdfs:isDefinedBy dc: ;
-    skos:note "A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/type) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation."@en .
-
 dcterms:contributor rdfs:label "Contributor"@en ;
     dcterms:description "The guidelines for using names of persons or organizations as creators apply to contributors."@en ;
     dcterms:issued "2008-01-14"^^xsd:date ;
-    rdfs:comment "An entity responsible for making contributions to the resource."@en ;
-    rdfs:subPropertyOf dc:contributor .
+    rdfs:comment "An entity responsible for making contributions to the resource."@en .
 
 dcterms:identifier a owl:AnnotationProperty,
         owl:DatatypeProperty ;
-    rdfs:range rdfs:Literal ;
-    rdfs:subPropertyOf dc:identifier .
+    rdfs:range rdfs:Literal .
 
 dcterms:title a owl:DatatypeProperty ;
-    rdfs:range rdfs:Literal ;
-    rdfs:subPropertyOf dc:title .
+    rdfs:range rdfs:Literal .
 
 xsd:gYear a rdfs:Datatype .
 
@@ -631,37 +534,18 @@ gutbrain:SuperKingdom a owl:Class ;
     rdfs:subClassOf gutbrain:Domain ;
     skos:exactMatch obo:NCIT_C45276 .
 
-dc:identifier a owl:AnnotationProperty ;
-    rdfs:label "Identifier"@en ;
-    dcterms:description "Recommended practice is to identify the resource by means of a string conforming to an identification system."@en ;
-    dcterms:issued "1999-07-02"^^xsd:date ;
-    rdfs:comment "An unambiguous reference to the resource within a given context."@en ;
-    rdfs:isDefinedBy dc: ;
-    skos:note "A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/identifier) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation."@en .
-
-dc:title a owl:AnnotationProperty ;
-    rdfs:label "Title"@en ;
-    dcterms:issued "1999-07-02"^^xsd:date ;
-    rdfs:comment "A name given to the resource."@en ;
-    rdfs:isDefinedBy dc: ;
-    skos:note "A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/title) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation."@en .
-
 dcterms:audience a owl:AnnotationProperty .
 
-dcterms:coverage a owl:AnnotationProperty ;
-    rdfs:subPropertyOf dc:coverage .
+dcterms:coverage a owl:AnnotationProperty .
 
 dcterms:description rdfs:label "Description"@en ;
     dcterms:description "Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."@en ;
     dcterms:issued "2008-01-14"^^xsd:date ;
-    rdfs:comment "An account of the resource."@en ;
-    rdfs:subPropertyOf dc:description .
+    rdfs:comment "An account of the resource."@en .
 
-dcterms:format a owl:AnnotationProperty ;
-    rdfs:subPropertyOf dc:format .
+dcterms:format a owl:AnnotationProperty .
 
-dcterms:rights a owl:AnnotationProperty ;
-    rdfs:subPropertyOf dc:rights .
+dcterms:rights a owl:AnnotationProperty .
 
 gutbrain:Animal a owl:Class ;
     rdfs:label "Animal"@en ;
@@ -696,38 +580,6 @@ gutbrain:Metabolite a owl:Class ;
     rdfs:label "Metabolite"@en ;
     rdfs:comment "Any substance involved in metabolism, either as a product of metabolism or as necessary for metabolism. [Definition Source: NCIT]"@en ;
     skos:exactMatch obo:CHEBI_25212 .
-
-dc:coverage a owl:AnnotationProperty ;
-    rdfs:label "Coverage"@en ;
-    dcterms:description "Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended practice is to use a controlled vocabulary such as the Getty Thesaurus of Geographic Names [[TGN](https://www.getty.edu/research/tools/vocabulary/tgn/index.html)]. Where appropriate, named places or time periods may be used in preference to numeric identifiers such as sets of coordinates or date ranges."@en ;
-    dcterms:issued "1999-07-02"^^xsd:date ;
-    rdfs:comment "The spatial or temporal topic of the resource, spatial applicability of the resource, or jurisdiction under which the resource is relevant."@en ;
-    rdfs:isDefinedBy dc: ;
-    skos:note "A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/coverage) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation."@en .
-
-dc:description a owl:AnnotationProperty ;
-    rdfs:label "Description"@en ;
-    dcterms:description "Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource."@en ;
-    dcterms:issued "1999-07-02"^^xsd:date ;
-    rdfs:comment "An account of the resource."@en ;
-    rdfs:isDefinedBy dc: ;
-    skos:note "A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/description) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation."@en .
-
-dc:format a owl:AnnotationProperty ;
-    rdfs:label "Format"@en ;
-    dcterms:description "Recommended practice is to use a controlled vocabulary where available. For example, for file formats one could use the list of Internet Media Types [[MIME](https://www.iana.org/assignments/media-types/media-types.xhtml)]."@en ;
-    dcterms:issued "1999-07-02"^^xsd:date ;
-    rdfs:comment "The file format, physical medium, or dimensions of the resource."@en ;
-    rdfs:isDefinedBy dc: ;
-    skos:note "A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/format) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation."@en .
-
-dc:rights a owl:AnnotationProperty ;
-    rdfs:label "Rights"@en ;
-    dcterms:description "Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights."@en ;
-    dcterms:issued "1999-07-02"^^xsd:date ;
-    rdfs:comment "Information about rights held in and over the resource."@en ;
-    rdfs:isDefinedBy dc: ;
-    skos:note "A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/rights) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation."@en .
 
 bto:Gene a owl:Class ;
     rdfs:label "Gene"@en ;
@@ -792,20 +644,11 @@ genomics:Species a owl:Class ;
 
 dcterms:date a owl:AnnotationProperty,
         owl:DatatypeProperty ;
-    rdfs:range rdfs:Literal ;
-    rdfs:subPropertyOf dc:date .
+    rdfs:range rdfs:Literal .
 
 gutbrain:Paper a owl:Class ;
     rdfs:label "Paper"@en ;
     rdfs:comment "An article reporting original research, published in a peer-reviewed journal. [Definition Source: ONTOAVIDA]"@en .
-
-dc:date a owl:AnnotationProperty ;
-    rdfs:label "Date"@en ;
-    dcterms:description "Date may be used to express temporal information at any level of granularity.  Recommended practice is to express the date, date/time, or period of time according to ISO 8601-1 [[ISO 8601-1](https://www.iso.org/iso-8601-date-and-time-format.html)] or a published profile of the ISO standard, such as the W3C Note on Date and Time Formats [[W3CDTF](https://www.w3.org/TR/NOTE-datetime)] or the Extended Date/Time Format Specification [[EDTF](http://www.loc.gov/standards/datetime/)].  If the full date is unknown, month and year (YYYY-MM) or just year (YYYY) may be used. Date ranges may be specified using ISO 8601 period of time specification in which start and end dates are separated by a '/' (slash) character.  Either the start or end date may be missing."@en ;
-    dcterms:issued "1999-07-02"^^xsd:date ;
-    rdfs:comment "A point or period of time associated with an event in the lifecycle of the resource."@en ;
-    rdfs:isDefinedBy dc: ;
-    skos:note "A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/date) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation."@en .
 
 bto:InterventionOrProcedure a owl:Class ;
     rdfs:label "Intervention or Procedure"@en ;
@@ -822,14 +665,5 @@ gutbrain:Microbiome a owl:Class ;
     rdfs:comment "This term refers to the entire habitat, including the microorganisms (bacteria, archaea, lower and higher eukaryotes, and viruses), their genomes (i.e., genes), and the surrounding environmental conditions. [Definition Source: OHMI]"@en ;
     skos:exactMatch obo:OHMI_0000003 .
 
-dc:relation a owl:AnnotationProperty ;
-    rdfs:label "Relation"@en ;
-    dcterms:description "Recommended practice is to identify the related resource by means of a URI. If this is not possible or feasible, a string conforming to a formal identification system may be provided."@en ;
-    dcterms:issued "1999-07-02"^^xsd:date ;
-    rdfs:comment "A related resource."@en ;
-    rdfs:isDefinedBy dc: ;
-    skos:note "A [second property](/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/relation) with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/) for an explanation."@en .
-
-dcterms:relation a owl:AnnotationProperty ;
-    rdfs:subPropertyOf dc:relation .
+dcterms:relation a owl:AnnotationProperty .
 
