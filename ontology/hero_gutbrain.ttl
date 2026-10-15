@@ -737,7 +737,7 @@ bto:Gene a owl:Class ;
 genomics:Assay a owl:Class ;
     rdfs:label "Assay"@en ;
     rdfs:comment "The assay used to produce measurement. [Definition Source: Phenopacket v2]"@en ;
-    rdfs:isDefinedBy "http://purl.obolibrary.org/obo/OBI_0000070" .
+    skos:exactMatch obo:OBI_0000070 .
 
 gutbrain:DietarySupplement a owl:Class ;
     rdfs:label "Dietary Supplement"@en ;
