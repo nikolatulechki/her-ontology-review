@@ -44,3 +44,13 @@ Source: https://hereditary.dei.unipd.it/ontology/gutbrain/schema/
 - Local path: `~/Projects/her-ontology-review`
 - Mail filter (Graphwise): `label:hereditary`
 - KB project page: `[[her-ontology-review]]`
+
+# Changes 
+
+Fixing namespaces 
+
+I removed <https://w3id.org/hereditary/ontology/gutbrain/schema/conceptSchema/> and the "naked" : prefix
+never use the naked prefix in a production ontology. 
+in this case we already have one `gutbrain`
+
+I fix gutbrain: prefix and the uri dor the ontology with a trailing / sot that it is pretty in the turtle
