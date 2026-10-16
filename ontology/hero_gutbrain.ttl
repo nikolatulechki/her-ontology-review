@@ -186,30 +186,23 @@ rdfs:Class a owl:Class .
 xsd:date a rdfs:Datatype .
 
 gutbrain: a owl:Ontology ;
-    rdfs:label "Author: Samuel Piron" ;
+    rdfs:label "The Hereditary Ontology for GutBrain Data"@en ;
     dcterms:creator <https://orcid.org/0000-0003-4970-4554>,
         <https://orcid.org/0009-0001-1596-8642>,
         <https://orcid.org/0009-0006-5558-4295> ;
     dcterms:description "The Hereditary ontology models phenoclinical, genomics and scientific aspects of the gut-brain axis to provide a unifying layer to query different database sources through an Ontology-Based Data Access (OBDA) framework. This part of the ontology focuses on gut-brain data."@en ;
-    dcterms:license """Copyright 2024-2027 University of Padua, Italy
-
-Licensed under the
-
-Creative Commons Attribution 4.0 International License
-     https://creativecommons.org/licenses/by/4.0/
-
-You may obtain a copy of the License at
-     https://creativecommons.org/licenses/by/4.0/legalcode
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights """Copyright 2024-2027 University of Padua, Italy
 
 This work has been supported by the HEREDITARY project
      https://hereditary-project.eu/
 
-     funded by the European Union’s Horizon Europe research and innovation programme 
+     funded by the European Union’s Horizon Europe research and innovation programme
      under the grant agreement No GA101137074"""@en ;
     dcterms:title "The Hereditary Ontology for GutBrain Data"@en ;
     owl:imports <http://www.w3.org/2004/02/skos/core> ;
     owl:versionIRI <https://w3id.org/hereditary/ontology/gutbrain/1.0/> ;
-    owl:versionInfo 1.0 .
+    owl:versionInfo "1.0" .
 
 gutbrain:ExperimentalResult a owl:Class ;
     rdfs:label "Experimental Result"@en ;

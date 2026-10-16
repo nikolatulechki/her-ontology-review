@@ -70,3 +70,5 @@ Removed the local declarations of `skos:exactMatch` (as an annotation property, 
 Removed `obo:OMIT_0003283`, an orphan resource used in no axiom, whose only content was an LLM-generated definition (`llama3-8b-8192`) and a stray "OMIT Match" comment.
 
 Replaced `rdfs:isDefinedBy "…NCIT_C62638"` (a string literal) on `gutbrain:Sentence` with `skos:exactMatch obo:NCIT_C62638`, like the other classes.
+
+Fixed the ontology header: `rdfs:label` is now the title instead of "Author: Samuel Piron" (he is already a `dcterms:creator` via ORCID 0009-0006-5558-4295); `owl:versionInfo` is the string `"1.0"` instead of an `xsd:decimal`; `dcterms:license` is the CC BY 4.0 IRI, and the copyright and funding text moved to `dcterms:rights`.
