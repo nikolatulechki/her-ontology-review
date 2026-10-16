@@ -68,3 +68,5 @@ Removed `rdfs:subClassOf bto:InterventionOrProcedure` from `gutbrain:Food`, `gut
 Removed the local declarations of `skos:exactMatch` (as an annotation property, which contradicts the imported SKOS and breaks OWL 2 DL), `skos:broaderTransitive` and `skos:inScheme` (unused); SKOS terms now come only from `owl:imports`.
 
 Removed `obo:OMIT_0003283`, an orphan resource used in no axiom, whose only content was an LLM-generated definition (`llama3-8b-8192`) and a stray "OMIT Match" comment.
+
+Replaced `rdfs:isDefinedBy "…NCIT_C62638"` (a string literal) on `gutbrain:Sentence` with `skos:exactMatch obo:NCIT_C62638`, like the other classes.

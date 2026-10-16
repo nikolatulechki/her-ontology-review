@@ -607,7 +607,7 @@ gutbrain:PaperTitle a owl:Class ;
 gutbrain:Sentence a owl:Class ;
     rdfs:label "Sentence"@en ;
     rdfs:comment "A set of words that is complete in itself, conveying a statement, question, exclamation, or command and typically containing an explicit or implied subject and a predicate containing a finite verb. [Definition Source: NCIT]"@en ;
-    rdfs:isDefinedBy "http://purl.obolibrary.org/obo/NCIT_C62638" .
+    skos:exactMatch obo:NCIT_C62638 .
 
 gutbrain:Drug a owl:Class ;
     rdfs:label "Drug"@en ;
