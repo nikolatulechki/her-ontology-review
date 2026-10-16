@@ -555,9 +555,9 @@ gutbrain:BiomedicalTechnique a owl:Class ;
 
 gutbrain:Food a owl:Class ;
     rdfs:label "Food"@en ;
-    rdfs:comment "A functional unit of heredity which occupies a specific position on a particular chromosome and serves as the template for a product that contributes to a phenotype or a biological function. [Definition Source: SNOMEDCT]"@en ;
+    rdfs:comment "A group of materials of either plant, animal or artificial origin containing essential body nutrients that can be ingested by an organism to produce energy, stimulate growth, and maintain life. [Definition Source: NCIT]"@en ;
     rdfs:subClassOf bto:InterventionOrProcedure ;
-    skos:exactMatch snomed:67271001 .
+    skos:exactMatch obo:NCIT_C62695 .
 
 gutbrain:Genome a owl:Class ;
     rdfs:label "Genome"@en ;

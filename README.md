@@ -60,3 +60,5 @@ Turned all `skos:exactMatch` values from string literals into prefixed IRIs (`ob
 Merged the two Species classes: removed the unused duplicate `gutbrain:Species` and kept `genomics:Species` (the one in the rank chain and in the relation domains/ranges). Replaced its mapping `edam:data_1045` ("Species name", a data item) with `obo:NCIT_C45293` (NCIt Species rank, consistent with the other rank classes); dropped the now-unused `edam:` prefix.
 
 Dropped `dc:` (Dublin Core Elements 1.1) entirely — removed inlined element declarations and all `rdfs:subPropertyOf dc:*` bridges; metadata stays on `dcterms:` only.
+
+Fixed `gutbrain:Food`, which carried the Gene definition and the Gene mapping (`snomed:67271001`, shared with `bto:Gene`): it now has the NCIt Food definition and `skos:exactMatch obo:NCIT_C62695`.
