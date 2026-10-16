@@ -1,7 +1,6 @@
 @prefix bto: <https://w3id.org/brainteaser/ontology/schema/> .
 @prefix dcmitype: <http://purl.org/dc/dcmitype/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix edam: <http://edamontology.org/> .
 @prefix genomics: <https://w3id.org/hereditary/ontology/genomics/schema/> .
 @prefix gutbrain: <https://w3id.org/hereditary/ontology/gutbrain/schema/> .
 @prefix mesh: <https://www.ncbi.nlm.nih.gov/mesh/> .
@@ -229,11 +228,6 @@ gutbrain:ExperimentalResult a owl:Class ;
 gutbrain:PaperCollection a owl:Class ;
     rdfs:label "Paper Collection"@en ;
     rdfs:comment "The type of the collection where the papers are stored."@en .
-
-gutbrain:Species a owl:Class ;
-    rdfs:label "Species"@en ;
-    rdfs:comment "A group of organisms that differ from all other groups of organisms and that are capable of breeding and producing fertile offspring. [Definition Source: NCIT]"@en ;
-    skos:exactMatch obo:NCIT_C45293 .
 
 gutbrain:Specimen a owl:Class ;
     rdfs:label "Specimen"@en ;
@@ -640,7 +634,7 @@ genomics:Species a owl:Class ;
     rdfs:label "Species"@en ;
     rdfs:comment "A group of organisms that differ from all other groups of organisms and that are capable of breeding and producing fertile offspring. [Definition Source: NCIT]"@en ;
     rdfs:subClassOf gutbrain:Genus ;
-    skos:exactMatch edam:data_1045 .
+    skos:exactMatch obo:NCIT_C45293 .
 
 dcterms:date a owl:AnnotationProperty,
         owl:DatatypeProperty ;
