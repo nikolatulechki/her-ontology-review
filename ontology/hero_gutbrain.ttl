@@ -243,7 +243,7 @@ gutbrain:administered a owl:ObjectProperty ;
     rdfs:label "administered"@en ;
     rdfs:comment "It defines the relationship between the intervention or procedure and the organism."@en ;
     rdfs:domain [ a owl:Class ;
-            owl:unionOf ( bto:InterventionOrProcedure gutbrain:DietarySupplement ) ] ;
+            owl:unionOf ( bto:InterventionOrProcedure gutbrain:Chemical gutbrain:DietarySupplement gutbrain:Drug gutbrain:Food ) ] ;
     rdfs:range gutbrain:Organism .
 
 gutbrain:affect a owl:ObjectProperty ;
@@ -256,7 +256,7 @@ gutbrain:changeAbundance a owl:ObjectProperty ;
     rdfs:label "changeAbundance"@en ;
     rdfs:comment "It defines the relationship between the bacteria or microbiome and te disease, disorder or finding."@en ;
     rdfs:domain [ a owl:Class ;
-            owl:unionOf ( bto:DiseaseDisorderOrFinding bto:InterventionOrProcedure ) ] ;
+            owl:unionOf ( bto:DiseaseDisorderOrFinding bto:InterventionOrProcedure gutbrain:Chemical gutbrain:Drug gutbrain:Food ) ] ;
     rdfs:range [ a owl:Class ;
             owl:unionOf ( genomics:Species gutbrain:Microbiome ) ] .
 
@@ -270,7 +270,7 @@ gutbrain:changeExpression a owl:ObjectProperty ;
     rdfs:label "changeExpression"@en ;
     rdfs:comment "It explains how a bacteria or the microbiome can change the expression of a gene."@en ;
     rdfs:domain [ a owl:Class ;
-            owl:unionOf ( bto:InterventionOrProcedure genomics:Species gutbrain:DietarySupplement gutbrain:Microbiome ) ] ;
+            owl:unionOf ( bto:InterventionOrProcedure genomics:Species gutbrain:Chemical gutbrain:DietarySupplement gutbrain:Drug gutbrain:Food gutbrain:Microbiome ) ] ;
     rdfs:range bto:Gene .
 
 gutbrain:comparedTo a owl:ObjectProperty ;
@@ -290,7 +290,7 @@ gutbrain:containedIn a owl:ObjectProperty ;
     rdfs:label "containedIn"@en ;
     rdfs:comment "It describes the relationship between the mention and the sentence and the entities and the mention."@en ;
     rdfs:domain [ a owl:Class ;
-            owl:unionOf ( bto:AnatomicalSite bto:DiseaseDisorderOrFinding bto:Gene bto:InterventionOrProcedure genomics:Assay genomics:Species gutbrain:Animal gutbrain:BiomedicalTechnique gutbrain:DietarySupplement gutbrain:Drug gutbrain:Food gutbrain:Human gutbrain:Microbiome gutbrain:Organism gutbrain:StatisticalTechnique ) ] .
+            owl:unionOf ( bto:AnatomicalSite bto:DiseaseDisorderOrFinding bto:Gene bto:InterventionOrProcedure genomics:Assay genomics:Species gutbrain:Animal gutbrain:BiomedicalTechnique gutbrain:Chemical gutbrain:DietarySupplement gutbrain:Drug gutbrain:Food gutbrain:Human gutbrain:Microbiome gutbrain:Organism gutbrain:StatisticalTechnique ) ] .
 
 gutbrain:contains a owl:ObjectProperty ;
     rdfs:label "contains"@en ;
@@ -344,7 +344,7 @@ gutbrain:influence a owl:ObjectProperty ;
     rdfs:label "influence"@en ;
     rdfs:comment "Represents the effect or impact of a dietary supplements or other substances and often diseases, disorders, or health conditions."@en ;
     rdfs:domain [ a owl:Class ;
-            owl:unionOf ( bto:InterventionOrProcedure genomics:Species ) ] ;
+            owl:unionOf ( bto:InterventionOrProcedure genomics:Species gutbrain:Chemical gutbrain:Drug gutbrain:Food ) ] ;
     rdfs:range bto:DiseaseDisorderOrFinding .
 
 gutbrain:interact a owl:ObjectProperty ;
@@ -353,7 +353,7 @@ gutbrain:interact a owl:ObjectProperty ;
     rdfs:domain [ a owl:Class ;
             owl:unionOf ( bto:DiseaseDisorderOrFinding genomics:Species gutbrain:Chemical gutbrain:Drug ) ] ;
     rdfs:range [ a owl:Class ;
-            owl:unionOf ( bto:InterventionOrProcedure genomics:Species gutbrain:Chemical gutbrain:Drug ) ] .
+            owl:unionOf ( bto:InterventionOrProcedure genomics:Species gutbrain:Chemical gutbrain:Drug gutbrain:Food ) ] .
 
 gutbrain:isA a owl:ObjectProperty ;
     rdfs:label "isA"@en ;
@@ -448,7 +448,8 @@ gutbrain:treatedBy a owl:ObjectProperty ;
     rdfs:label "treatedBy"@en ;
     rdfs:comment "It explains that the disease, disorder or finding is treated by the intervention or procedure."@en ;
     rdfs:domain bto:DiseaseDisorderOrFinding ;
-    rdfs:range bto:InterventionOrProcedure .
+    rdfs:range [ a owl:Class ;
+            owl:unionOf ( bto:InterventionOrProcedure gutbrain:Chemical gutbrain:Drug gutbrain:Food ) ] .
 
 gutbrain:usedBy a owl:ObjectProperty ;
     rdfs:label "usedBy"@en ;
@@ -556,7 +557,6 @@ gutbrain:BiomedicalTechnique a owl:Class ;
 gutbrain:Food a owl:Class ;
     rdfs:label "Food"@en ;
     rdfs:comment "A group of materials of either plant, animal or artificial origin containing essential body nutrients that can be ingested by an organism to produce energy, stimulate growth, and maintain life. [Definition Source: NCIT]"@en ;
-    rdfs:subClassOf bto:InterventionOrProcedure ;
     skos:exactMatch obo:NCIT_C62695 .
 
 gutbrain:Genome a owl:Class ;
@@ -603,7 +603,6 @@ bto:AnatomicalSite a owl:Class ;
 gutbrain:Chemical a owl:Class ;
     rdfs:label "Chemical"@en ;
     rdfs:comment "A chemical substance is a portion of matter of constant composition, composed of molecular entities of the same type or of different types. [Definition Source: CHEBI]"@en ;
-    rdfs:subClassOf bto:InterventionOrProcedure ;
     skos:exactMatch obo:CHEBI_59999 .
 
 gutbrain:PaperAbstract a owl:Class ;
@@ -622,7 +621,6 @@ gutbrain:Sentence a owl:Class ;
 gutbrain:Drug a owl:Class ;
     rdfs:label "Drug"@en ;
     rdfs:comment "Any substance which when absorbed into a living organism may modify one or more of its functions. The term is generally accepted for a substance taken for a therapeutic purpose, but is also commonly used for abused substances. [Definition Source: CHEBI]"@en ;
-    rdfs:subClassOf bto:InterventionOrProcedure ;
     skos:exactMatch obo:CHEBI_23888 .
 
 gutbrain:Organism a owl:Class ;

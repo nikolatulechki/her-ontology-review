@@ -62,3 +62,5 @@ Merged the two Species classes: removed the unused duplicate `gutbrain:Species` 
 Dropped `dc:` (Dublin Core Elements 1.1) entirely — removed inlined element declarations and all `rdfs:subPropertyOf dc:*` bridges; metadata stays on `dcterms:` only.
 
 Fixed `gutbrain:Food`, which carried the Gene definition and the Gene mapping (`snomed:67271001`, shared with `bto:Gene`): it now has the NCIt Food definition and `skos:exactMatch obo:NCIT_C62695`.
+
+Removed `rdfs:subClassOf bto:InterventionOrProcedure` from `gutbrain:Food`, `gutbrain:Drug` and `gutbrain:Chemical`: NCIT_C25218 is an activity, so every substance was inferred to be one. To keep the existing domain/range entailments, the three classes are now listed explicitly in the unions that used to cover them through `InterventionOrProcedure` (`administered`, `changeAbundance`, `changeExpression`, `containedIn`, `influence`, `interact`, `treatedBy`).
