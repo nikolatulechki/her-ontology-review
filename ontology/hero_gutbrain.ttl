@@ -188,12 +188,6 @@ rdfs:Class a owl:Class .
 
 xsd:date a rdfs:Datatype .
 
-skos:broaderTransitive a owl:ObjectProperty .
-
-skos:exactMatch a owl:AnnotationProperty .
-
-skos:inScheme a owl:ObjectProperty .
-
 gutbrain: a owl:Ontology ;
     rdfs:label "Author: Samuel Piron" ;
     dcterms:creator <https://orcid.org/0000-0003-4970-4554>,
