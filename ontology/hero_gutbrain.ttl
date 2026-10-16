@@ -12,9 +12,6 @@
 @prefix snomed: <http://purl.bioontology.org/ontology/SNOMEDCT/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-obo:OMIT_0003283 rdfs:comment "Brain_diseases refers to a collective term for various medical conditions that affect the structure or function of the brain, including neurological disorders, neurodegenerative diseases, and psychiatric conditions. [Definition Source: llama3-8b-8192]",
-        "OMIT Match" .
-
 dcterms:Box a rdfs:Datatype .
 
 dcterms:ISO3166 a rdfs:Datatype .
